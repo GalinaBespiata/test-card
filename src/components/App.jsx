@@ -1,18 +1,10 @@
-import HomePage from 'components/HomePage';
+import UserProfile from 'components/UserProfile';
+import { Container } from './StyledComponents';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        padding: '20px',
-        justifyContent: 'center',
-        alignItems: 'center',
-        // fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      <HomePage />
-    </div>
+    <Container>
+      <UserProfile />
+    </Container>
   );
 };

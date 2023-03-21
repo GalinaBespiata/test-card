@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #010101;
+`;
+
 export const UserCard = styled.div`
   height: 460px;
   width: 380px;

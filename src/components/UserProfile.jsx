@@ -6,24 +6,18 @@ import { ReactComponent as FrameOfAvatar } from '../images/frame.svg';
 import { ReactComponent as Avatar } from '../images/Boy.svg';
 
 let followers = 100500;
+
 const options = {
   style: 'decimal',
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
   useGrouping: true,
 };
-function HomePage() {
-  const [isToggled, setIsToggled] = useState(false);
+
+function UserProfile() {
+  const [isToggled, setIsToggled] = useState(true);
 
   useEffect(() => {
-    let isFromStorage = JSON.parse(localStorage.getItem('followersStorage'));
-    console.log(isFromStorage);
-
-    if (followers !== isFromStorage) {
-      setIsToggled(!isToggled);
-      console.log(isToggled);
-    }
-
     localStorage.removeItem('followersStorage');
   }, []);
 
@@ -78,4 +72,4 @@ function HomePage() {
     </Styled.UserCard>
   );
 }
-export default HomePage;
+export default UserProfile;
