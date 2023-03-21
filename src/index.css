@@ -9,8 +9,6 @@ body {
   color: rgba(235, 216, 255, 1);
 
   line-height: calc(24.5 / 20);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
